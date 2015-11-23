@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
     private String[] values = {"ㅁ","ㄴ","ㄷ","ㄹ","ㄴ","ㄷ","ㄹ"};
 
     int a;
+    int b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
