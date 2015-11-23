@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\classes-28a06af92bb18b6493def599e01817539feb8fe0.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\classes-8898ab2578c36606becd2c894db92840d560447d.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\.gradle\caches\modules-2\files-2.1\com.github.nkzawa\socket.io-client\0.3.0\8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9\socket.io-client-0.3.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8dfd7cf8d1124acb027b3ffd53eafcc518af3ba9">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\socket.io-client-0.3.0-267fc98c0f24f544c0312063fa9d7d331fbea3db.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\classes-cb4d8863ad5da538c865c5c1134d14febc8ffd83.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-708399d3d5035fc08df5a8702ef1cd9aa051aac3.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.10.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\classes-6d843f4d7cc240ffcbc9804fb1229e9d53b2d477.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\classes-e68a60c87a6982f2fea46ff7c8e91f7f75015ad5.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\.gradle\caches\modules-2\files-2.1\com.github.nkzawa\engine.io-client\0.3.1\3ca9d0d53a27ecb88538ed874be417cfa827db5d\engine.io-client-0.3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3ca9d0d53a27ecb88538ed874be417cfa827db5d">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\engine.io-client-0.3.1-984054bb2236f52d65f52c9e75190d33828c46e1.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\exploded-aar\com.nispok\snackbar\2.11.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d0db114dc90b3e192ba48d22421a9c47cfc01f00">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\classes-f8a6f8f537e8ac0ddba826dc3309070f9051392f.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\.gradle\caches\modules-2\files-2.1\org.java-websocket\Java-WebSocket\1.3.0\db2658f013fb163de4a99274c2eb9e17efe535d2\Java-WebSocket-1.3.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\Java-WebSocket-1.3.0-09ef9e9b7051fd5528e1ae0d061e75315f9df969.jar" />
+    </item>
+    <item
+        jar="C:\Users\kim\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\kim\AndroidStudioProjects\DodamDodam\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-96071bb53ddaa39cded24e5e7fa8586bdcc8d538.jar" />
+    </item>
+
+</items>
