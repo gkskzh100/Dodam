@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     private CustomAdapter adapter;
     private String[] values = {"ㅁ","ㄴ","ㄷ","ㄹ","ㄴ","ㄷ","ㄹ"};
 
+    int a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
