@@ -17,7 +17,7 @@ import jm.dodamdodam.dodamdodam.Global;
  */
 public class SocketIO {
 
-    private static final String URL = "http://sms-application.herokuapp.com";
+    private static final String URL = "http://dodam-dodam-server.herokuapp.com";
     private static final String TAG = "SocketIO";
 
     public static Socket socket;
