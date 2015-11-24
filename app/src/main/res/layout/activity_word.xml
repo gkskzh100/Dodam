@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/activity_word_container"
     tools:context=".controller.activity.WordActivity">
 
 
@@ -20,7 +21,6 @@
                 android:id="@+id/activity_word_back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="글귀 입력"
                 android:textColor="#FFFFFF"
                 android:gravity="left|center_vertical"
                 android:layout_alignParentLeft="true"
@@ -45,24 +45,22 @@
     </android.support.v7.widget.Toolbar>
 
 
-    <LinearLayout
+    <Spinner
+        android:id="@+id/activity_word_spinner"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/feel"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="기분" />
-
-    </LinearLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4">
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
 
         <EditText
             android:id="@+id/word_edit_text"

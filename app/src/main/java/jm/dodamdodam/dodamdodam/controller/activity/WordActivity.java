@@ -2,12 +2,16 @@ package jm.dodamdodam.dodamdodam.controller.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import jm.dodamdodam.dodamdodam.Global;
@@ -20,8 +24,11 @@ public class WordActivity extends AppCompatActivity {
     private Button submit;
     private EditText word_edit_text;
     private Toolbar toolbar;
+    private Spinner spinner;
+    private LinearLayout container;
 
     private String word;
+    private int feel = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +45,10 @@ public class WordActivity extends AppCompatActivity {
         back_btn = (Button) findViewById(R.id.activity_word_back_btn);
         submit = (Button) findViewById(R.id.activity_word_submit);
         toolbar = (Toolbar) findViewById(R.id.activity_word_toolbar);
+        spinner = (Spinner) findViewById(R.id.activity_word_spinner);
+        container = (LinearLayout) findViewById(R.id.activity_word_container);
 
+        back_btn.setText("< 글귀 입력");
         setSupportActionBar(toolbar);
     }
 
@@ -50,7 +60,6 @@ public class WordActivity extends AppCompatActivity {
                 finish();
             }
         });
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,9 +69,24 @@ public class WordActivity extends AppCompatActivity {
                     word_edit_text.setError("글귀를 입력하세요");
                     return;
                 }
+                if (feel == 0) {
+                    Snackbar.make(container, "느낌을 선택하세요", Snackbar.LENGTH_SHORT).show();
+                    return;
+                }
 
                 // 서버에 글귀 추가 요청
-                SocketReq.insertWord(getApplicationContext(), Global.HAPPY, word);
+                SocketReq.insertWord(getApplicationContext(), feel, word);
+            }
+        });
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                feel = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
     }
