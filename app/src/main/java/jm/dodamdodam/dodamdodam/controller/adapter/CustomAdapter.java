@@ -1,4 +1,4 @@
-package jm.dodamdodam.dodamdodam;
+package jm.dodamdodam.dodamdodam.controller.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import jm.dodamdodam.dodamdodam.R;
 
 /**
  * Created by kim on 2015-11-14.

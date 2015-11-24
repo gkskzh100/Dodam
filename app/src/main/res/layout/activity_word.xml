@@ -3,71 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
-    tools:context="jm.dodamdodam.dodamdodam.WordActivity">
+    tools:context=".controller.activity.WordActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_word_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/sb__background">
+
+        <Button
+            android:id="@+id/activity_word_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="글귀 입력"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"/>
+
+
+    </android.support.v7.widget.Toolbar>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:weightSum="3">
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="0.6">
-
-            <Button
-                android:id="@+id/word_back_btn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2.4">
-
-        </LinearLayout>
+            android:gravity="center"
+            android:text="기분" />
 
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8"
-        android:orientation="vertical"
-        android:weightSum="5">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="기분" />
-
-        </LinearLayout>
+        android:layout_weight="4">
 
         <EditText
             android:id="@+id/word_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
+            android:layout_height="match_parent"
             android:gravity="top"
-            android:hint="activity_word" />
-    </LinearLayout>
+            android:hint="글귀를 입력하세요" />
 
-    <Button
-        android:layout_width="72dp"
-        android:layout_height="0dp"
-        android:layout_gravity="right"
-        android:layout_weight="1"
-        android:id="@+id/word_send_btn"/>
+    </android.support.design.widget.TextInputLayout>
+
+
 </LinearLayout>

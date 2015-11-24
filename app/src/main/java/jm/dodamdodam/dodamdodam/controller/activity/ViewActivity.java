@@ -1,4 +1,4 @@
-package jm.dodamdodam.dodamdodam;
+package jm.dodamdodam.dodamdodam.controller.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.nispok.snackbar.Snackbar;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import jm.dodamdodam.dodamdodam.Global;
+import jm.dodamdodam.dodamdodam.R;
 
 public class ViewActivity extends Activity {
 

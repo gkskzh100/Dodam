@@ -5,11 +5,13 @@ package jm.dodamdodam.dodamdodam;
  */
 public class Global {
 
-    public static final String DIARY = "diary";
-    public static final String CHECK = "check";
-    public static final String ADD_WORD = "addWord";
-    public static final String GET_WORD = "getWord";
     public static final String COMMAND = "command";
+
+    public static final String DIARY = "diary";
+
+    public static final String INSERT_WORD = "insertWord";
+
+
     public static final String FEEL = "feel";
     public static final int HAPPY = 1;
     public static final int ANGRY = 2;

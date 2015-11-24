@@ -1,15 +1,21 @@
-package jm.dodamdodam.dodamdodam;
+package jm.dodamdodam.dodamdodam.controller.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.GridView;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.nispok.snackbar.Snackbar;
 
+import jm.dodamdodam.dodamdodam.R;
+import jm.dodamdodam.dodamdodam.controller.adapter.CustomAdapter;
+
 public class MainActivity extends Activity {
+
+    private static final String TAG = "MainActivity";
 
     private FloatingActionButton summaryView;
     private FloatingActionButton write;
@@ -21,9 +27,6 @@ public class MainActivity extends Activity {
     private GridView gridView;
     private CustomAdapter adapter;
     private String[] values = {"ㅁ","ㄴ","ㄷ","ㄹ","ㄴ","ㄷ","ㄹ"};
-
-    int a;
-    int b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,13 +43,14 @@ public class MainActivity extends Activity {
         summaryView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Log.d(TAG, "미리보기");
             }
         });
 
         write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "일기 쓰기");
                 Intent intent = new Intent(getApplicationContext(),WriteActivity.class);
                 startActivity(intent);
             }
@@ -55,6 +59,7 @@ public class MainActivity extends Activity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "글귀 추가");
                 Intent intent = new Intent(getApplicationContext(),WordActivity.class);
                 startActivity(intent);
             }
