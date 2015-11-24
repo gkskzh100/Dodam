@@ -17,7 +17,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b883e5e-e8e6-40dd-985f-4189c96f477b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIntent.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_word.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Dodam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SocketIO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java">
+      <file leaf-file-name="WordActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7040359">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.4753363">
+              <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -1439,20 +1449,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/WordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controll/WordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controll/activity/WordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_write.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WriteActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/Main2Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_word.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIntent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_word.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java" />
       </list>
     </option>
   </component>
@@ -1702,7 +1713,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="016f4717de56b094" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
@@ -1947,42 +1958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40358743">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83856505">
-          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4349776">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7264574">
-          <caret line="48" column="24" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2032,14 +2007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2067,49 +2034,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.793103">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.6053812">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67713004">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4349776">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIntent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6367713">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4753363">
+        <state vertical-scroll-proportion="0.2825112">
           <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <element signature="e#335#353#0" expanded="true" />
-            <element signature="e#852#882#0" expanded="true" />
-            <element signature="e#1010#1039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_word.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16143498">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.042959426">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2470024">
+          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33183858">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7040359">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.5560538">
+          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4753363">
+          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
           <folding />
         </state>
       </provider>

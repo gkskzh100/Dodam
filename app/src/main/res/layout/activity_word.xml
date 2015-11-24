@@ -12,14 +12,34 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/sb__background">
 
-        <Button
-            android:id="@+id/activity_word_back_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="글귀 입력"
-            android:textColor="#FFFFFF"
-            android:layout_alignParentLeft="true"
-            android:background="@android:color/transparent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/activity_word_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="글귀 입력"
+                android:textColor="#FFFFFF"
+                android:gravity="left|center_vertical"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"/>
+
+
+            <Button
+                android:id="@+id/activity_word_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="확인"
+                android:gravity="right|center_vertical"
+                android:paddingRight="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"/>
+
+
+        </RelativeLayout>
 
 
     </android.support.v7.widget.Toolbar>
