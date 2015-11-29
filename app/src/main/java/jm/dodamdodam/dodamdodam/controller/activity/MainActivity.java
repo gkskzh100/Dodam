@@ -3,17 +3,23 @@ package jm.dodamdodam.dodamdodam.controller.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.GridView;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.nispok.snackbar.Snackbar;
 
-import jm.dodamdodam.dodamdodam.R;
-import jm.dodamdodam.dodamdodam.controller.adapter.CustomAdapter;
+import java.util.ArrayList;
 
-public class MainActivity extends Activity {
+import jm.dodamdodam.dodamdodam.Global;
+import jm.dodamdodam.dodamdodam.R;
+import jm.dodamdodam.dodamdodam.controller.adapter.DiaryAdapter;
+import jm.dodamdodam.dodamdodam.data.DBManager;
+import jm.dodamdodam.dodamdodam.data.DiaryModel;
+
+public class MainActivity extends Activity implements DiaryAdapter.OnDiaryClickListener {
 
     private static final String TAG = "MainActivity";
 
@@ -24,22 +30,54 @@ public class MainActivity extends Activity {
     private long backPressedTime = 0;
     private final long FINISH_INTERVAL_TIME = 2000;
 
-    private GridView gridView;
-    private CustomAdapter adapter;
-    private String[] values = {"ㅁ","ㄴ","ㄷ","ㄹ","ㄴ","ㄷ","ㄹ"};
+    private RecyclerView recyclerView;
+    private DiaryAdapter adapter;
+
+    private ArrayList<DiaryModel> diarys;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        adapter = new CustomAdapter(this, values);
-        gridView = (GridView) findViewById(R.id.main_gridview);
-        gridView.setAdapter(adapter);
+        init();
+    }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getDB();
+        setAdapter();
+    }
+
+    private void init() {
         summaryView = (FloatingActionButton) findViewById(R.id.btn_summary);
         write = (FloatingActionButton) findViewById(R.id.btn_write);
         add = (FloatingActionButton) findViewById(R.id.btn_add);
+        recyclerView = (RecyclerView) findViewById(R.id.activity_main_diary_list);
 
+        setListener();
+    }
+
+
+    private void getDB() {
+        Global.dbManager = new DBManager(getApplicationContext(), DBManager.TABLE_NAME, null, 1);
+        diarys = Global.dbManager.getAllDiary();
+    }
+
+
+    private void setAdapter() {
+        LinearLayoutManager manager = new LinearLayoutManager(getApplicationContext());
+        manager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(manager);
+
+        adapter = new DiaryAdapter(this, diarys);
+        recyclerView.setAdapter(adapter);
+    }
+
+
+    private void setListener() {
         summaryView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +98,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "글귀 추가");
-                Intent intent = new Intent(getApplicationContext(),WordActivity.class);
+                Intent intent = new Intent(getApplicationContext(), WordActivity.class);
                 startActivity(intent);
             }
         });
@@ -79,5 +117,13 @@ public class MainActivity extends Activity {
                     .text("'뒤로' 버튼을 한번 더 누르세요.")
                     .show(this);
         }
+    }
+
+
+    @Override
+    public void onClick(DiaryModel diary) {
+        Intent intent = new Intent(getApplicationContext(), ViewActivity.class);
+        intent.putExtra(Global.DIARY, diary);
+        startActivity(intent);
     }
 }

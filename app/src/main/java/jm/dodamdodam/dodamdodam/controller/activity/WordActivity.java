@@ -1,6 +1,5 @@
 package jm.dodamdodam.dodamdodam.controller.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,13 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import jm.dodamdodam.dodamdodam.Global;
 import jm.dodamdodam.dodamdodam.R;
-import jm.dodamdodam.dodamdodam.socketio.SocketReq;
+import jm.dodamdodam.dodamdodam.socketio.RequestManager;
+import jm.dodamdodam.dodamdodam.socketio.SocketHandler;
 
 public class WordActivity extends AppCompatActivity {
+
+    private static final String TAG = "WordActivity";
 
     private Button back_btn;
     private Button submit;
@@ -75,7 +75,17 @@ public class WordActivity extends AppCompatActivity {
                 }
 
                 // 서버에 글귀 추가 요청
-                SocketReq.insertWord(getApplicationContext(), feel, word);
+                RequestManager.insertWord(getApplicationContext(), feel, word, new SocketHandler.OnInsertWord() {
+                    @Override
+                    public void onSuccess() {
+                        finish();
+                    }
+
+                    @Override
+                    public void onException() {
+                        Snackbar.make(container, "글귀 저장 중 문제가 발생했습니다.", Snackbar.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -92,23 +102,23 @@ public class WordActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-
-        if (intent != null) {
-            String command = intent.getStringExtra(Global.COMMAND);
-            if (command != null) {
-                int code = intent.getIntExtra(Global.CODE, -1);
-                if (code != -1) {
-                    if(code == 200) {
-                        Toast.makeText(getApplicationContext(),"성공~!", Toast.LENGTH_SHORT).show();
-                        finish();
-                    } else if (code == 400 || code == 401) {
-                        Toast.makeText(getApplicationContext(),"네트워크를 확인하세요.",Toast.LENGTH_SHORT).show();
-                    }
-                }
-            }
-        }
-    }
+//    @Override
+//    protected void onNewIntent(Intent intent) {
+//        super.onNewIntent(intent);
+//
+//        if (intent != null) {
+//            String command = intent.getStringExtra(Global.COMMAND);
+//            if (command != null) {
+//                int code = intent.getIntExtra(Global.CODE, -1);
+//                if (code != -1) {
+//                    if(code == 200) {
+//                        Toast.makeText(getApplicationContext(),"성공~!", Toast.LENGTH_SHORT).show();
+//                        finish();
+//                    } else if (code == 400 || code == 401) {
+//                        Toast.makeText(getApplicationContext(),"네트워크를 확인하세요.",Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//            }
+//        }
+//    }
 }

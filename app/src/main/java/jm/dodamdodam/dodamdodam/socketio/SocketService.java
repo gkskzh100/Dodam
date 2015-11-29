@@ -35,10 +35,19 @@ public class SocketService extends Service {
                 if (command.equals(Global.INSERT_WORD)) {
                     // 글귀 추가
                     processInsertWord(intent);
+                } else if (command.equals(Global.GET_WORD)) {
+                    // 글귀 요청
+                    processGetWord(intent);
                 }
             }
         }
         return super.onStartCommand(intent, flags, startId);
+    }
+
+
+    private void processGetWord(Intent intent) {
+        int feel = intent.getIntExtra(Global.FEEL, -1);
+        socketIO.getWord(feel);
     }
 
 

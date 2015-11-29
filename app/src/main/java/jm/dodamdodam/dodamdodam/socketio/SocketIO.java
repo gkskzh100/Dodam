@@ -52,7 +52,13 @@ public class SocketIO {
             @Override
             public void call(Object... args) {
                 JSONObject object = (JSONObject) args[0];
-                SocketRes.processInsertWord(context, object);
+                ResponseManager.processInsertWord(object);
+            }
+        }).on(Global.GET_WORD, new Emitter.Listener() {
+            @Override
+            public void call(Object... args) {
+                JSONObject object = (JSONObject) args[0];
+                ResponseManager.processGetWord(object);
             }
         });
     }
@@ -82,6 +88,21 @@ public class SocketIO {
             object.put(Global.FEEL, feel);
             object.put(Global.WORD, word);
             socket.emit(Global.INSERT_WORD, object);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    // TODO: 15. 11. 29. 글귀 요청
+    public void getWord(int feel) {
+        Log.d(TAG, "글귀 요청");
+        Log.d(TAG, "feel = " + feel);
+
+        try {
+            JSONObject object = new JSONObject();
+            object.put(Global.FEEL, feel);
+            socket.emit(Global.GET_WORD, object);
         } catch (JSONException e) {
             e.printStackTrace();
         }

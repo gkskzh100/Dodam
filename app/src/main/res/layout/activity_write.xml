@@ -3,80 +3,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
-    tools:context=".controller.activity.WriteActivity">
+    android:id="@+id/activity_write_container"
+    tools:context=".controller.activity.writeActivity">
 
-    <LinearLayout
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_write_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="3">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/sb__background">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/write_back_btn"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2.4">
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:weightSum="5"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/activity_vertical_margin">
-            <TextView
+                android:id="@+id/activity_write_back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="날짜 : 2015.11.13"
-                android:id="@+id/write_date_text"
-                android:gravity="center"/>
+                android:textColor="#FFFFFF"
+                android:gravity="left|center_vertical"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"/>
+
+
             <Button
+                android:id="@+id/activity_write_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+                android:text="확인"
+                android:gravity="right|center_vertical"
+                android:paddingRight="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"/>
 
-        </LinearLayout>
-        <android.support.design.widget.TextInputLayout
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <Spinner
+        android:id="@+id/activity_write_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/feel"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <EditText
+            android:id="@+id/write_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="오늘 하루는 어땠나요?"
-                android:gravity="top"
-                android:id="@+id/write_edit_text"/>
-        </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="일기를 입력하세요" />
 
-    <Button
-        android:layout_width="72dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="right"
-        android:text="저장"
-        android:id="@+id/write_save_btn"/>
+    </android.support.design.widget.TextInputLayout>
+
 
 </LinearLayout>

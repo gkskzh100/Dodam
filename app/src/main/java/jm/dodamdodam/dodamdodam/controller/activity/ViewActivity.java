@@ -1,61 +1,78 @@
 package jm.dodamdodam.dodamdodam.controller.activity;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import jm.dodamdodam.dodamdodam.Global;
 import jm.dodamdodam.dodamdodam.R;
+import jm.dodamdodam.dodamdodam.controller.fragment.ViewDiaryFragment;
+import jm.dodamdodam.dodamdodam.controller.fragment.ViewWordFragment;
+import jm.dodamdodam.dodamdodam.data.DiaryModel;
 
-public class ViewActivity extends Activity {
+public class ViewActivity extends AppCompatActivity {
 
     private static final String TAG = "ViewActivity";
-    private Button back_btn;
-    private TextView view_text_view;
-    private TextView view_date_text;
+
+    private ViewPager viewPager;
 
     private long backPressedTime = 0;
     private final long FINISH_INTERVAL_TIME = 2000;
+
+    private DiaryModel diary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
 
-        view_date_text = (TextView) findViewById(R.id.view_date_text);
-
-        SimpleDateFormat mSimpleDateFormat = new SimpleDateFormat("yyyy.MM.dd");
-        Date currentTime = new Date();
-        String mTime = mSimpleDateFormat.format(currentTime);
-        view_date_text.setText("날짜 : " + mTime);
+        init();
+    }
 
 
-        view_text_view = (TextView) findViewById(R.id.view_text_view);
-        back_btn = (Button) findViewById(R.id.view_back_btn);
-        back_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+    private void init() {
+        viewPager = (ViewPager) findViewById(R.id.activity_view_pager);
+        viewPager.setAdapter(new ViewAdapter(getSupportFragmentManager()));
 
-        Intent intent = getIntent();
-        if (intent != null) {
-            String diary_str = intent.getStringExtra(Global.DIARY);
-            if (diary_str != null) {
-                Log.d(TAG, "diary = " + diary_str);
-                view_text_view.setText(diary_str);
+        diary = (DiaryModel) getIntent().getSerializableExtra(Global.DIARY);
+    }
+
+
+    private class ViewAdapter extends FragmentPagerAdapter {
+
+        public ViewAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+
+        @Override
+        public Fragment getItem(int position) {
+            switch (position) {
+                case 0:
+                    return ViewDiaryFragment.newInstance(diary);
+
+                default:
+                    return new ViewWordFragment();
             }
         }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
+    }
+
+
+    private void setDate() {
+        SimpleDateFormat mSimpleDateFormat = new SimpleDateFormat("yyyy.MM.dd");
+        Date currentTime = new Date(diary.getDate());
+        String mTime = mSimpleDateFormat.format(currentTime);
     }
 
 //    @Override
