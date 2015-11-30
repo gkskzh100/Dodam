@@ -22,9 +22,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1.4">
 
-            <ImageView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:text="Dodam Dodam"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="24sp"/>
             <!-- 도담도담 -->
 
         </LinearLayout>

@@ -7,9 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import jm.dodamdodam.dodamdodam.Global;
 import jm.dodamdodam.dodamdodam.R;
 import jm.dodamdodam.dodamdodam.controller.fragment.ViewDiaryFragment;
@@ -58,7 +55,7 @@ public class ViewActivity extends AppCompatActivity {
                     return ViewDiaryFragment.newInstance(diary);
 
                 default:
-                    return new ViewWordFragment();
+                    return ViewWordFragment.newInstance(diary);
             }
         }
 
@@ -66,13 +63,6 @@ public class ViewActivity extends AppCompatActivity {
         public int getCount() {
             return 2;
         }
-    }
-
-
-    private void setDate() {
-        SimpleDateFormat mSimpleDateFormat = new SimpleDateFormat("yyyy.MM.dd");
-        Date currentTime = new Date(diary.getDate());
-        String mTime = mSimpleDateFormat.format(currentTime);
     }
 
 //    @Override

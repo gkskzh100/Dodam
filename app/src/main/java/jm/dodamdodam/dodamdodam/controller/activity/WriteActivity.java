@@ -1,7 +1,6 @@
 package jm.dodamdodam.dodamdodam.controller.activity;
 
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -74,7 +73,8 @@ public class WriteActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DiaryModel curDiary = diary;
                 String content = diaryInput.getText().toString();
-                long date = SystemClock.currentThreadTimeMillis();
+                long date = System.currentTimeMillis();
+                Log.d(TAG, "date = " + date);
 
                 if (TextUtils.isEmpty(content)) {
                     diaryInput.setError("일기를 입력하세요");

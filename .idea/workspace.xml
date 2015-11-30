@@ -17,35 +17,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b883e5e-e8e6-40dd-985f-4189c96f477b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/data/DBManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/adapter/DiaryAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/data/DiaryModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/diary_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_diary.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/adapter/CustomAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketReq.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/RequestManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/ResponseManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketService.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/ViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/ViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WordActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WriteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WriteActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_write.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_write.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_diary.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_diary.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Dodam.iws" />
@@ -74,26 +56,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ViewDiaryFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83856505">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fragment_view_diary.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_view_diary.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5172415">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.551724">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8633093">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -1492,7 +1475,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_word.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/adapter/CustomAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketRes.java" />
@@ -1505,19 +1487,21 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/diary_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/data/DiaryModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/RequestManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/ResponseManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/ViewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/socketio/SocketIO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/data/DBManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/ViewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WriteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_diary.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -1775,7 +1759,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="016f4717de56b094" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
@@ -1968,7 +1952,7 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19224556" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19224556" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2074,17 +2058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29016787">
-          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_write.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2125,8 +2098,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
           <folding>
-            <element signature="e#2653#2654#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="false" />
+            <element signature="e#2709#2710#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2161,17 +2134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_view.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2179,14 +2141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5179856">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2825112">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2229,14 +2183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2735426">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/data/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.00896861">
@@ -2244,14 +2190,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WriteActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3632287">
-          <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2274,23 +2212,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewWordFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85650223">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/ViewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6367713">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state vertical-scroll-proportion="1.2914798">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3542601">
+          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
           <folding>
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
-            <element signature="e#1834#1835#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/WriteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16143498">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5560538">
-          <caret line="124" column="72" selection-start-line="124" selection-start-column="72" selection-end-line="124" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92825115">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_view_word.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5611511">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2300,19 +2280,20 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5172415">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.551724">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jm/dodamdodam/dodamdodam/controller/fragment/ViewDiaryFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83856505">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.8633093">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
