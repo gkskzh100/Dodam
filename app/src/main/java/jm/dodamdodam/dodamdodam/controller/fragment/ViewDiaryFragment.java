@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -27,6 +28,7 @@ public class ViewDiaryFragment extends Fragment {
     private TextView feelView;
     private TextView contentView;
     private TextView dateView;
+    private ImageView feelImageView;
 
     public static ViewDiaryFragment newInstance(DiaryModel diary) {
         ViewDiaryFragment fragment = new ViewDiaryFragment();
@@ -57,6 +59,7 @@ public class ViewDiaryFragment extends Fragment {
         feelView = (TextView) rootView.findViewById(R.id.fragment_view_feel);
         contentView = (TextView) rootView.findViewById(R.id.fragment_view_content);
         dateView = (TextView) rootView.findViewById(R.id.fragment_view_date);
+        feelImageView = (ImageView) rootView.findViewById(R.id.fragment_view_feel_image);
 
         setDiary();
     }
@@ -64,6 +67,7 @@ public class ViewDiaryFragment extends Fragment {
 
     private void setDiary() {
         setFeel(diary.getFeel());
+        setFeelImage(diary.getFeel());
         setDate();
         contentView.setText(diary.getContent());
     }
@@ -74,6 +78,32 @@ public class ViewDiaryFragment extends Fragment {
         Date currentTime = new Date(diary.getDate());
         String time = simpleDateFormat.format(currentTime);
         dateView.setText(time);
+    }
+
+
+    // TODO: 15. 11. 29. 기분 이미지 설정
+    private void setFeelImage(int feel) {
+        switch (feel) {
+            case Global.HAPPY:
+                feelImageView.setImageResource(R.drawable.happy);
+                break;
+
+            case Global.ANGRY:
+                feelImageView.setImageResource(R.drawable.angry);
+                break;
+
+            case Global.SAD:
+                feelImageView.setImageResource(R.drawable.sad);
+                break;
+
+            case Global.SHY:
+                feelImageView.setImageResource(R.drawable.shy);
+                break;
+
+            case Global.SCARY:
+                feelImageView.setImageResource(R.drawable.scary);
+                break;
+        }
     }
 
 

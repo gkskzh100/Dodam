@@ -55,23 +55,23 @@ public class DiaryAdapter extends RecyclerView.Adapter<DiaryAdapter.DiaryViewHol
     private void setFeelImage(DiaryViewHolder holder, int feel) {
         switch (feel) {
             case Global.HAPPY:
-                holder.feelView.setImageResource(R.drawable.fab_bg_mini);
+                holder.feelView.setImageResource(R.drawable.happy);
                 break;
 
             case Global.ANGRY:
-                holder.feelView.setImageResource(R.drawable.fab_bg_mini);
+                holder.feelView.setImageResource(R.drawable.angry);
                 break;
 
             case Global.SAD:
-                holder.feelView.setImageResource(R.drawable.fab_bg_mini);
+                holder.feelView.setImageResource(R.drawable.sad);
                 break;
 
             case Global.SHY:
-                holder.feelView.setImageResource(R.drawable.fab_bg_mini);
+                holder.feelView.setImageResource(R.drawable.shy);
                 break;
 
             case Global.SCARY:
-                holder.feelView.setImageResource(R.drawable.fab_bg_mini);
+                holder.feelView.setImageResource(R.drawable.scary);
                 break;
         }
     }

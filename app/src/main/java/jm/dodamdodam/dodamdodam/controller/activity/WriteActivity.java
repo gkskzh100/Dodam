@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -24,7 +25,7 @@ public class WriteActivity extends AppCompatActivity {
     private static final String TAG = "WriteActivity";
 
     private Button back_btn;
-    private Button submit;
+    private ImageButton submit;
     private EditText diaryInput;
     private Toolbar toolbar;
     private Spinner spinner;
@@ -47,7 +48,7 @@ public class WriteActivity extends AppCompatActivity {
     private void init() {
         diaryInput = (EditText) findViewById(R.id.write_edit_text);
         back_btn = (Button) findViewById(R.id.activity_write_back_btn);
-        submit = (Button) findViewById(R.id.activity_write_submit);
+        submit = (ImageButton) findViewById(R.id.activity_write_submit);
         toolbar = (Toolbar) findViewById(R.id.activity_write_toolbar);
         spinner = (Spinner) findViewById(R.id.activity_write_spinner);
         container = (LinearLayout) findViewById(R.id.activity_write_container);
@@ -102,6 +103,7 @@ public class WriteActivity extends AppCompatActivity {
                         @Override
                         public void onException() {
                             Snackbar.make(container, "글귀 요청에 실패했습니다", Snackbar.LENGTH_SHORT).show();
+                            submit.setClickable(true);
                         }
                     });
                 } else {
@@ -111,6 +113,8 @@ public class WriteActivity extends AppCompatActivity {
                     Global.dbManager.updateDiary(diary, curDiary);
                     finish();
                 }
+
+                submit.setClickable(false);
             }
         });
         back_btn.setOnClickListener(new View.OnClickListener() {

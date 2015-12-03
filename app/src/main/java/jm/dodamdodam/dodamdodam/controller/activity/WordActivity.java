@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -21,7 +22,7 @@ public class WordActivity extends AppCompatActivity {
     private static final String TAG = "WordActivity";
 
     private Button back_btn;
-    private Button submit;
+    private ImageButton submit;
     private EditText word_edit_text;
     private Toolbar toolbar;
     private Spinner spinner;
@@ -43,7 +44,7 @@ public class WordActivity extends AppCompatActivity {
     private void init() {
         word_edit_text = (EditText) findViewById(R.id.word_edit_text);
         back_btn = (Button) findViewById(R.id.activity_word_back_btn);
-        submit = (Button) findViewById(R.id.activity_word_submit);
+        submit = (ImageButton) findViewById(R.id.activity_word_submit);
         toolbar = (Toolbar) findViewById(R.id.activity_word_toolbar);
         spinner = (Spinner) findViewById(R.id.activity_word_spinner);
         container = (LinearLayout) findViewById(R.id.activity_word_container);
@@ -84,8 +85,11 @@ public class WordActivity extends AppCompatActivity {
                     @Override
                     public void onException() {
                         Snackbar.make(container, "글귀 저장 중 문제가 발생했습니다.", Snackbar.LENGTH_SHORT).show();
+                        submit.setClickable(true);
                     }
                 });
+
+                submit.setClickable(false);
             }
         });
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

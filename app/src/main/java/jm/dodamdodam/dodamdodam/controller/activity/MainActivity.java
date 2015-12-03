@@ -102,6 +102,16 @@ public class MainActivity extends Activity implements DiaryAdapter.OnDiaryClickL
                 startActivity(intent);
             }
         });
+
+        summaryView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "미리보기");
+                Intent intent = new Intent(getApplicationContext(), SummaryActivity.class);
+                intent.putExtra(Global.DIARY, diarys);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
