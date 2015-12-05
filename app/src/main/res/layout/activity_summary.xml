@@ -6,6 +6,15 @@
     android:id="@+id/activity_summary_container"
     tools:context="jm.dodamdodam.dodamdodam.controller.activity.SummaryActivity">
 
+
+    <ImageView
+        android:id="@+id/activity_summary_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"/>
+
+
+
     <TextView
         android:id="@+id/activity_summary_content"
         android:layout_width="wrap_content"
@@ -14,6 +23,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:gravity="center"
+        android:textSize="20sp"
         android:layout_gravity="center"/>
 
 
@@ -25,6 +35,7 @@
         android:gravity="center"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:textSize="20sp"
         android:layout_gravity="center"/>
 
 </FrameLayout>

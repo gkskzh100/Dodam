@@ -1,5 +1,6 @@
 package jm.dodamdodam.dodamdodam.controller.activity;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,6 +19,7 @@ import java.util.Random;
 
 import jm.dodamdodam.dodamdodam.Global;
 import jm.dodamdodam.dodamdodam.R;
+import jm.dodamdodam.dodamdodam.controller.ImageSizeController;
 import jm.dodamdodam.dodamdodam.data.DiaryModel;
 
 public class SummaryActivity extends AppCompatActivity {
@@ -26,6 +29,7 @@ public class SummaryActivity extends AppCompatActivity {
     private FrameLayout container;
     private TextView contentView;
     private TextView wordView;
+    private ImageView background;
     private Handler handler = new Handler();
 
     @Override
@@ -42,13 +46,47 @@ public class SummaryActivity extends AppCompatActivity {
         container = (FrameLayout) findViewById(R.id.activity_summary_container);
         contentView = (TextView) findViewById(R.id.activity_summary_content);
         wordView = (TextView) findViewById(R.id.activity_summary_word);
+        background = (ImageView) findViewById(R.id.activity_summary_background);
+
         contentView.setVisibility(View.INVISIBLE);
         wordView.setVisibility(View.INVISIBLE);
+
+        setBackground();
         randomDiary();
         showView();
     }
 
 
+    private void setBackground() {
+        Random random = new Random();
+        int num = random.nextInt(5);
+        Bitmap bitmap = null;
+        switch (num) {
+            case 0:
+                bitmap = ImageSizeController.getSmallImage(getApplicationContext(), R.drawable.background1);
+                break;
+
+            case 1:
+                bitmap = ImageSizeController.getSmallImage(getApplicationContext(), R.drawable.background2);
+                break;
+
+            case 2:
+                bitmap = ImageSizeController.getSmallImage(getApplicationContext(), R.drawable.background3);
+                break;
+
+            case 3:
+                bitmap = ImageSizeController.getSmallImage(getApplicationContext(), R.drawable.background4);
+                break;
+
+            case 4:
+                bitmap = ImageSizeController.getSmallImage(getApplicationContext(), R.drawable.background5);
+                break;
+        }
+        background.setImageBitmap(bitmap);
+    }
+
+
+    // TODO: 15. 12. 5. 랜덤으로 섞기
     private void randomDiary() {
         Random random = new Random();
         for (int i = 0; i < diarys.size(); i++) {
