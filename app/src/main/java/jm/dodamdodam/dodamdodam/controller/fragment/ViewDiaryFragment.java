@@ -1,5 +1,7 @@
 package jm.dodamdodam.dodamdodam.controller.fragment;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,9 +13,11 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 import jm.dodamdodam.dodamdodam.Global;
 import jm.dodamdodam.dodamdodam.R;
+import jm.dodamdodam.dodamdodam.controller.ImageSizeController;
 import jm.dodamdodam.dodamdodam.data.DiaryModel;
 
 /**
@@ -29,6 +33,7 @@ public class ViewDiaryFragment extends Fragment {
     private TextView contentView;
     private TextView dateView;
     private ImageView feelImageView;
+    private ImageView container;
 
     public static ViewDiaryFragment newInstance(DiaryModel diary) {
         ViewDiaryFragment fragment = new ViewDiaryFragment();
@@ -60,8 +65,41 @@ public class ViewDiaryFragment extends Fragment {
         contentView = (TextView) rootView.findViewById(R.id.fragment_view_content);
         dateView = (TextView) rootView.findViewById(R.id.fragment_view_date);
         feelImageView = (ImageView) rootView.findViewById(R.id.fragment_view_feel_image);
+        container = (ImageView) rootView.findViewById(R.id.fragment_view_diary_background);
 
         setDiary();
+        setBackground();
+    }
+
+
+    private void setBackground() {
+        Random random = new Random();
+        int num = random.nextInt(5);
+        Bitmap bitmap = null;
+        switch (num) {
+            case 0:
+                bitmap = ImageSizeController.getSmallImage(getActivity(), R.drawable.background1);
+                break;
+
+            case 1:
+                bitmap = ImageSizeController.getSmallImage(getActivity(), R.drawable.background2);
+                break;
+
+            case 2:
+                bitmap = ImageSizeController.getSmallImage(getActivity(), R.drawable.background3);
+                break;
+
+            case 3:
+                bitmap = ImageSizeController.getSmallImage(getActivity(), R.drawable.background4);
+                break;
+
+            case 4:
+                bitmap = ImageSizeController.getSmallImage(getActivity(), R.drawable.background5);
+                break;
+        }
+
+        BitmapDrawable bitmapDrawable = new BitmapDrawable(bitmap);
+        container.setBackground(bitmapDrawable);
     }
 
 
