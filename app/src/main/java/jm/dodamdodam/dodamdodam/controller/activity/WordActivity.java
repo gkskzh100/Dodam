@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 
 import jm.dodamdodam.dodamdodam.R;
@@ -27,6 +28,7 @@ public class WordActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private Spinner spinner;
     private LinearLayout container;
+    private ProgressBar progressBar;
 
     private String word;
     private int feel = 0;
@@ -48,6 +50,7 @@ public class WordActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.activity_word_toolbar);
         spinner = (Spinner) findViewById(R.id.activity_word_spinner);
         container = (LinearLayout) findViewById(R.id.activity_word_container);
+        progressBar = (ProgressBar) findViewById(R.id.activity_word_progress);
 
         back_btn.setText("< 글귀 입력");
         setSupportActionBar(toolbar);
@@ -79,6 +82,7 @@ public class WordActivity extends AppCompatActivity {
                 RequestManager.insertWord(getApplicationContext(), feel, word, new SocketHandler.OnInsertWord() {
                     @Override
                     public void onSuccess() {
+                        progressBar.setVisibility(View.INVISIBLE);
                         finish();
                     }
 
@@ -86,10 +90,12 @@ public class WordActivity extends AppCompatActivity {
                     public void onException() {
                         Snackbar.make(container, "글귀 저장 중 문제가 발생했습니다.", Snackbar.LENGTH_SHORT).show();
                         submit.setClickable(true);
+                        progressBar.setVisibility(View.INVISIBLE);
                     }
                 });
 
                 submit.setClickable(false);
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

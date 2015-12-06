@@ -22,6 +22,7 @@ public class SocketIO {
 
     public static Socket socket;
     private Context context;
+    private ResponseManager responseManager;
 
     public SocketIO(Context context) {
         this.context = context;
@@ -38,6 +39,7 @@ public class SocketIO {
         socketConnect();
 
         setListener();
+        responseManager = new ResponseManager();
     }
 
 
@@ -52,13 +54,13 @@ public class SocketIO {
             @Override
             public void call(Object... args) {
                 JSONObject object = (JSONObject) args[0];
-                ResponseManager.processInsertWord(object);
+                responseManager.processInsertWord(object);
             }
         }).on(Global.GET_WORD, new Emitter.Listener() {
             @Override
             public void call(Object... args) {
                 JSONObject object = (JSONObject) args[0];
-                ResponseManager.processGetWord(object);
+                responseManager.processGetWord(object);
             }
         });
     }

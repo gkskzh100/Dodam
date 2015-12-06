@@ -69,6 +69,7 @@ public class WriteActivity extends AppCompatActivity {
 
 
     private void setListener() {
+        // 확인 버튼 클릭
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,11 +87,18 @@ public class WriteActivity extends AppCompatActivity {
                     return;
                 }
 
+
+                // Progress Visible
+
+
+
                 if (curDiary == null) {
                     final DiaryModel newDiary = new DiaryModel();
                     newDiary.setContent(content);
                     newDiary.setFeel(feel);
                     newDiary.setDate(date);
+
+                    // 서버에서 글귀가 오면
                     RequestManager.getWord(getApplicationContext(), feel, new SocketHandler.OnGetWord() {
                         @Override
                         public void onSuccess(String word) {
@@ -106,6 +114,9 @@ public class WriteActivity extends AppCompatActivity {
                             submit.setClickable(true);
                         }
                     });
+
+
+
                 } else {
                     curDiary.setContent(content);
                     curDiary.setFeel(feel);
